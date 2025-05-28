@@ -83,6 +83,7 @@ This project forecasts PM2.5 air pollution levels using time-series data and dee
 ---
 
 ## Project Structure
+```
 ├── data/
 │   ├── train.csv
 │   └── test.csv
@@ -109,3 +110,4 @@ This project forecasts PM2.5 air pollution levels using time-series data and dee
 │   └── subm_fixed_18.csv
 │   └── subm_fixed_19.csv
 └── README.md
+```
