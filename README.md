@@ -2,44 +2,30 @@
 
 This project forecasts PM2.5 air pollution levels using time-series data and deep learning techniques, specifically LSTM and Bidirectional LSTM layers.After several trials on different architectures, I got an RMSE of 44.39.which was the 
 
-Below are the steps I took in training the model,
-## 1. Data Exploration & Cleaning
-
-- Handled missing values and outliers  
-- Visualized data distributions for deeper insights
-  
-
-## 2. Feature Engineering
-
-- Extracted time-based features from the datetime column:
+Below are the steps I took in training the model;
+ 1. Data Exploration & Cleaning
+  - Handled missing values and outliers  
+  - Visualized data distributions for deeper insights
+ 2. Feature Engineering
+  - Extracted time-based features from the datetime column:
   - Hour
   - Day
   - Month
   - Weekday  
-
-## 3. Data Normalization
-
-- Standardized input features to enhance model convergence and accuracy  
-
-## 4. Model Building
-
-- Built a deep learning model using:
+ 3. Data Normalization
+  - Standardized input features to enhance model convergence and accuracy  
+ 4. Model Building
+  - Built a deep learning model using:
   - Stacked LSTM layers
   - Bidirectional LSTM for better context capture  
-
-## 5. Training & Evaluation
-
-- Split the data into training and validation sets  
-- Evaluated model performance using:
+ 5. Training & Evaluation
+  - Split the data into training and validation sets  
+  - Evaluated model performance using:
   - Mean Squared Error (MSE)
   - Root Mean Squared Error (RMSE)  
-
-## 6. Prediction Output
-
-- Generated final predictions on the test set  
-- Saved output files for submission  
-
----
+6. Prediction Output
+  - Generated final predictions on the test set  
+  - Saved output files for submission  
 
 ## Model Architecture
 
