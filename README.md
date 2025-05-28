@@ -1,6 +1,12 @@
 # AIR-QUALITY-TIME-SERIES-FORECASTING
+This project forecasts PM2.5 air pollution levels using time-series data and deep learning techniques, specifically LSTM and Bidirectional LSTM layers .PM2.5 are very tiny particles found in smoke that have a diameter of 2.5 micrometers or
+less.[3] Breathing PM2.5 can be detrimental to your health as these particles can easily
+enter your lungs or blood streams which can cause adverse effects like coughing, chest
+tightness, breathing issues.[3].
+In view of the above, this challenge focuses on using Recurrent Neural Network(RNN) and
+Long Short Term Memory(LSTM) to predict the future levels of PM2.5 in the air based on
+the training data.
 
-This project forecasts PM2.5 air pollution levels using time-series data and deep learning techniques, specifically LSTM and Bidirectional LSTM layers.After several trials on different architectures, I got an RMSE of 44.39.which was the 
 
 Below are the steps I took in training the model;
  1. Data Exploration & Cleaning
@@ -25,7 +31,19 @@ Below are the steps I took in training the model;
   - Root Mean Squared Error (RMSE)  
 6. Prediction Output
   - Generated final predictions on the test set  
-  - Saved output files for submission  
+  - Saved output files for submission
+
+## Dataset
+
+- **Train Data:** `train.csv`  
+  - 30,676 rows × 12 columns  
+  - Includes datetime, meteorological variables, and target `pm2.5`
+
+- **Test Data:** `test.csv`  
+  - 13,148 rows × 11 columns  
+  - Contains the same features as training data, excluding `pm2.5`  
+
+---
 
 ## Model Architecture
 
@@ -40,18 +58,6 @@ Below are the steps I took in training the model;
 | Dense (64 units)    | Fully connected layer with ReLU and L2 regularization                       |
 | Dropout (20%)       | Final dropout before prediction                                             |
 | Output (1 unit)     | Predicts final PM2.5 value as a continuous output                           |
-
----
-
-## Dataset
-
-- **Train Data:** `train.csv`  
-  - 30,676 rows × 12 columns  
-  - Includes datetime, meteorological variables, and target `pm2.5`
-
-- **Test Data:** `test.csv`  
-  - 13,148 rows × 11 columns  
-  - Contains the same features as training data, excluding `pm2.5`  
 
 ---
 
@@ -97,3 +103,5 @@ Below are the steps I took in training the model;
 │   └── subm_fixed_19.csv
 └── README.md
 ```
+RESULTS:
+After the training, I had an RMSE of 44.39.
