@@ -104,4 +104,4 @@ Below are the steps I took in training the model;
 └── README.md
 ```
 RESULTS:
-After the training, I had an RMSE of 44.39.
+After the training and exploring different architectures, the best architecture had an RMSE of 44.33 as shown in the notebook.
